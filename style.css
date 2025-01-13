@@ -1,0 +1,15 @@
+body {
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+.loader {
+  align-items: center;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 3;
+}
