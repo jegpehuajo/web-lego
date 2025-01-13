@@ -3,13 +3,37 @@ body {
   margin: 0;
   overflow: hidden;
 }
+.container {
+  position: absolute;
+  z-index: 1;
+}
+.page {
+  position: relative;
+  height: 100vh;
+}
 .loader {
   align-items: center;
-  background-color: white;
+  background-color:burlywood;
   display: flex;
   justify-content: center;
   position: absolute;
   height: 100%;
   width: 100%;
   z-index: 3;
+
+  animation: loader 2s linear forwards;
 }
+  @keyframes loader {
+    0% {
+      opacity: 1;
+      visibility:visible;
+    }
+    95% {
+      opacity: 1;
+      visibility: inherit;
+    }
+    100% {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
