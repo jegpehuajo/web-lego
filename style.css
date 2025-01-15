@@ -135,6 +135,46 @@ body {
   grid-row: 1 / 2;
   height: 100vh;
 }
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  background-color: var(--yellow);
+  border-radius: 0 80px 0 0;
+  animation-name: footer;
+  animation-duration: 0.5s;
+  animation-delay: 2.5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+@keyframes footer {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.footer div {
+  background-color: var(--blue);
+  width: 130px;
+  height: 50%;
+  border-radius: 20px 20px 0 0;
+  display: flex;
+  justify-content: center;
+}
+.footer div img {
+  width: 160px;
+  position: absolute;
+  bottom: 50px;
+  transform: translateY(0px) scale(1);
+  transition: transform .5s ease-in-out;
+}
+.footer div:hover img {
+  cursor: pointer;
+  transform: translateY(-20px) scale(1.2);
+  transition: transform 0.3s ease-in-out;
+}
 .loader {
   align-items: center;
   background-color:burlywood;
